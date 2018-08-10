@@ -91,9 +91,13 @@ void Merge_sort(int *a, int left, int right)
 //QUICKSORT
 int Partition(int *a, int left, int right)
 {
-	int temp,i,j,exchange,random;
-	random = Generate_ramdom(left,right); //rondom partition
-	//random= left;//naive partition
+	int temp, i, j, exchange, random, swap;
+	swap = Generate_ramdom(left, right); //rondom partition
+	exchange = a[swap];
+	a[swap] = a[left];
+	a[left] = exchange;
+
+	random = left;//naive partition
 	temp=a[random];
 	i = left;
 	for(j=left+1;j<=right;j++)

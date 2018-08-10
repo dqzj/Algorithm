@@ -1,2 +1,5 @@
-﻿  排序算法.vcxproj -> D:\编码练习\算法\排序算法\Debug\排序算法.exe
-  排序算法.vcxproj -> D:\编码练习\算法\排序算法\Debug\排序算法.pdb (Full PDB)
+﻿  sort.cpp
+d:\git\algorithm\算法\排序算法\排序算法\sort.cpp(24): warning C4101: “k”: 未引用的局部变量
+d:\git\algorithm\算法\排序算法\排序算法\sort.cpp(187): warning C4244: “=”: 从“double”转换到“int”，可能丢失数据
+  排序算法.vcxproj -> D:\GIT\Algorithm\算法\排序算法\Debug\排序算法.exe
+  排序算法.vcxproj -> D:\GIT\Algorithm\算法\排序算法\Debug\排序算法.pdb (Full PDB)
