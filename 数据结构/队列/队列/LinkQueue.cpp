@@ -1,8 +1,10 @@
 #include"LinkQueue.h"
+#include"SqQueue.h"
 #include<string>
 int main()
 {
-	LinkQueue LQ;
+	//LinkQueue LQ;
+	SqQueue LQ;
 	InitQueue(LQ);
 	cout<<QueueEmpty(LQ)<<endl;
 	int i = 10;

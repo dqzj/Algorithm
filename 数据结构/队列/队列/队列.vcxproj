@@ -147,6 +147,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="LinkQueue.h" />
+    <ClInclude Include="SqQueue.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LinkQueue.cpp" />

@@ -18,6 +18,9 @@
     <ClInclude Include="LinkQueue.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="SqQueue.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="LinkQueue.cpp">
