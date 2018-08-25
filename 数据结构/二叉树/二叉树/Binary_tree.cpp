@@ -1,25 +1,41 @@
-#include"Binary_tree.h"
+#include"Binary_Search_Tree.h"
+
+#include<fstream>
 int main()
 {
 	BiTree Head,T,test;
 	CreateBiTree(T);
-	int count = 10;
-	T->data = 10;
+	int data;
+	T->data = MAXSIGN;
+	Head = T;
+
+	ifstream in("array.txt");
+	while (!in.eof())
+	{
+		in >> data;
+		T = Head;
+		Insert_Search_Tree(T, data);
+	}
+	cout << endl;
+
+
+/*	int count = 10;
+	T->data = 5;
 	Head = T;
 	while (count--)
 	{
-		while (InsertChild(T, count) == -1)
-		{
-			T = T->lchild;
-		} 
+		T = Head;
+		if (count == 5)
+			continue;
+		Insert_Search_Tree(T,count);
 	}
+*/	
 	
-	DeleteChild(T->rchild);
-	PreOrderTraverse(Head);
+	InOrderTraverse(Head);
 	cout << endl;
 	LevelOrderTraverse(Head);
 	cout << "树深：" << BiTreeDepth(Head) << endl;
-	ClearBiTree(T);
+	//ClearBiTree(T);
 	PreOrderTraverse(Head);
 	cout << endl;
 	cout << "树深：" << BiTreeDepth(Head) << endl;
@@ -29,4 +45,16 @@ int main()
 		LevelOrderTraverse(test);
 	else
 		cout << "节点不存在！" << endl;
+
+
+	test = Max_tree(Head);
+	cout << "最大值：" << test->data << endl;
+	test = Min_tree(Head);
+	cout << "最小值：" << test->data << endl;
+	
+
+	cout << "--------------------------------------------------" << endl;
+	LevelOrderTraverse(Head);
+	Delete_S_Node(Head, 17);
+	LevelOrderTraverse(Head);
 }

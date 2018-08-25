@@ -152,6 +152,9 @@
   <ItemGroup>
     <ClCompile Include="Binary_tree.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <Text Include="array.txt" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
