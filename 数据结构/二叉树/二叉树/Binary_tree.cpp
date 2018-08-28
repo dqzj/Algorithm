@@ -6,6 +6,7 @@ int main()
 	BiTree Head,T,test;
 	CreateBiTree(T);
 	int data;
+	int label;
 	T->data = MAXSIGN;
 	Head = T;
 
@@ -13,10 +14,11 @@ int main()
 	while (!in.eof())
 	{
 		in >> data;
-		T = Head;
-		Insert_Search_Tree(T, data);
+		//Insert_Search_Tree(T, data);
+		Insert_B_Node(T, data);
 	}
 	cout << endl;
+
 
 
 /*	int count = 10;
@@ -31,11 +33,12 @@ int main()
 	}
 */	
 	
-	InOrderTraverse(Head);
-	cout << endl;
-	LevelOrderTraverse(Head);
-	cout << "树深：" << BiTreeDepth(Head) << endl;
-	//ClearBiTree(T);
+
+//	InOrderTraverse(Head);
+//	cout << endl;
+	LevelOrderTraverse(T);
+	cout << "树深：" << BiTreeDepth(T) << endl;
+/*	//ClearBiTree(T);
 	PreOrderTraverse(Head);
 	cout << endl;
 	cout << "树深：" << BiTreeDepth(Head) << endl;
@@ -54,7 +57,16 @@ int main()
 	
 
 	cout << "--------------------------------------------------" << endl;
+	//LevelOrderTraverse(Head);
+	//Delete_S_Node(Head, 17);
 	LevelOrderTraverse(Head);
-	Delete_S_Node(Head, 17);
+
+	cout << "--------------------------------------------------" << endl;
+	cout<<"树高度差："<<Balance_Factor(Head)<<endl;
+
+	cout << "--------------------------------------------------" << endl;
+	Rotating_RL(Head, Head);
 	LevelOrderTraverse(Head);
+	cout << "树高度差：" << Balance_Factor(Head) << endl;
+*/
 }
