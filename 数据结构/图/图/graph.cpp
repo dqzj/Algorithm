@@ -1,7 +1,8 @@
-#include"Graph_AdjMatrix.h"
+//#include"Graph_AdjMatrix.h"
+#include"Graph_AdjList.h"
 int main()
 {
-	MGraph G;
+	ALGraph G;
 	VertexType v="k";
 	CreateGraph(G);
 	Display(G);

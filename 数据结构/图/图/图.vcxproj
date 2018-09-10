@@ -146,6 +146,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Graph_AdjList.h" />
     <ClInclude Include="Graph_AdjMatrix.h" />
   </ItemGroup>
   <ItemGroup>

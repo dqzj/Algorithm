@@ -18,6 +18,9 @@
     <ClInclude Include="Graph_AdjMatrix.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="Graph_AdjList.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="graph.txt" />
