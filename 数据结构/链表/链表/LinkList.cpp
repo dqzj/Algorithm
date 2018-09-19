@@ -10,6 +10,9 @@ int main()
 	}
 	ListTraverse(L);
 
+	ListReverse(L);
+	ListTraverse(L);
+
 	i = 0;
 	while (i < 10) {
 		cout << i + 1 << ":" << GetELement(L, i+1) << endl;

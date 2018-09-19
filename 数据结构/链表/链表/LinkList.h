@@ -186,5 +186,21 @@ void ListTraverse(LinkList &L)
 	cout << endl;
 }
 
+//ListReverseÁ´±íµ¹ÖÃ
+void ListReverse(LinkList &L)
+{
+	LinkList pre = NULL;
+	LinkList p = L;
+
+	while (p)
+	{
+		LinkList tmpNext = p->next;
+		p->next = pre;
+		pre = p;
+		p = tmpNext;
+	}
+	L = pre;
+}
+
 #endif // !_LINKLIST_H_
 	
